@@ -1,16 +1,4 @@
 Rails.application.routes.draw do
   resources :students
-  resources :users
-  root "users#index"
-  root "student#index"
+  resources :books, only: [ :index, :new, :create]  
 end
-
-
-
-
-
-
-
-
-
-
